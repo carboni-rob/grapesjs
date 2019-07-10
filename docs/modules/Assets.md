@@ -171,7 +171,7 @@ editor.runCommand('open-assets');
 ```
 
 
-Worth nothing that by doing this you can't do much with assets (if you double click on them nothing happens) and this is because you've not indicated any target. Try just to select an image in your canvas and run this in console (you should first make the editor globally available `window.editor = editor;` in your script)
+Worth noting that by doing this you can't do much with assets (if you double click on them nothing happens) and this is because you've not indicated any target. Try just to select an image in your canvas and run this in console (you should first make the editor globally available `window.editor = editor;` in your script)
 
 ```js
 editor.runCommand('open-assets', {
@@ -195,7 +195,7 @@ If you want to customize the Asset Manager after the initialization you have to 
 const am = editor.AssetManager;
 ```
 
-First of all, it's worth nothing that Asset Manager keeps 2 collections of assets:
+First of all, it's worth noting that Asset Manager keeps 2 collections of assets:
 * **global** - which is just the one with all available assets, you can get it with `am.getAll()`
 * **visible** - this is the collection which is currently rendered by the Asset Manager, you get it with `am.getAllVisible()`
 
